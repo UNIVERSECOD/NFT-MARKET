@@ -1,0 +1,15 @@
+.artist-head-backgroun img:first-child {
+position: relative;
+width: fit-content;
+}
+
+.artist-head-backgroun img:last-child {
+    position: absolute;
+}
+
+.artist-page-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+

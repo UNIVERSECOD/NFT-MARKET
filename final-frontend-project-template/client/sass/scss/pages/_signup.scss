@@ -1,0 +1,158 @@
+.container1 {
+  width: 100%;
+}
+
+.create-account-box {
+  @include background-clr-all;
+  @include placeCenter;
+  flex-direction: column;
+  height: auto;
+  position: relative;
+  gap: 30px;
+  width: auto;
+}
+
+.account-box-left {
+  display: none;
+  background-color: transparent;
+  min-width: 375px;
+  position: relative;
+}
+
+.account-box-right {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: auto;
+  padding: 30px 0px 40px;
+  position: relative;
+  width: 315px;
+}
+
+.input-box {
+  @include placeCenter;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.input {
+  align-items: center;
+  align-self: stretch;
+  background-color: white;
+  border: 1px solid;
+  border-color: var(--caption--label-text);
+  border-radius: 20px;
+  display: flex;
+  gap: 12px;
+  height: 46px;
+  padding: 16px 20px;
+  position: relative;
+}
+
+.mobile-pic {
+  background-color: transparent;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: relative;
+}
+
+// .input  input {
+//     align-items: center;
+//     align-self: stretch;
+//     background-color: white;
+//     border: 1px solid;
+//     border-color: var(--caption--label-text);
+//     border-radius: 20px;
+//     display: flex;
+//     gap: 12px;
+//     height: 46px;
+//     mix-blend-mode: normal;
+//     padding: 16px 20px;
+//     position: relative;
+// }
+
+.input img {
+  background-color: transparent;
+  height: 20px;
+  bottom: 5px;
+  left: -3px;
+  min-width: 20px;
+  width: 100%;
+}
+
+@media (max-width: 375px) {
+}
+
+// @media (min-width: 375px) and (max-width: 834px) {
+//     .create-account-box {
+
+//     }
+
+//     .account-box-left{
+
+//     }
+
+//     .account-box-right {
+
+//     }
+// }
+
+@media (min-width: 834px) and (max-width: 1280px) {
+  .mobile-pic {
+    display: none;
+  }
+  .create-account-box {
+    @include placeCenter;
+    flex-direction: row;
+  }
+
+  .account-box-left {
+    // background-image: url(../assets/signuppage/img/ImagePlaceholder.png);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .account-box-right {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    text-wrap: wrap;
+    height: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .mobile-pic {
+    display: none;
+  }
+  .create-account-box {
+    @include placeCenter;
+    flex-direction: row;
+  }
+
+  .account-box-left {
+    // background-image: url(../assets/signuppage/img/ImagePlaceholder.png);
+    // height: 100vh;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    object-fit: cover;
+  }
+
+  .account-box-left img {
+    width: 100%;
+  }
+
+  .account-box-right {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    text-wrap: wrap;
+    height: auto;
+  }
+}

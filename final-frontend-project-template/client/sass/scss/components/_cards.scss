@@ -1,0 +1,128 @@
+.discover-more-nfts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nfts-card {
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-secondary;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.nft-card {
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  mix-blend-mode: normal;
+  transition: all 0.3s ease;
+  margin-top: 50px;
+  border: 1px solid transparent;
+  cursor: pointer ;
+}
+
+.nft-card:hover {
+    transform: scale(0.95);
+}
+ 
+.nfts-card-top {
+  width: 100%;
+}
+
+.nfts-card-top img {
+  width: 100%;
+}
+
+.nft-card-bottom {
+  align-items: flex-start;
+  background-color: $color-secondary;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  padding: 20px 30px 25px;
+  margin-top: -4px;
+  border: 1px solid transparent;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.nft-card-bottom-heading {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: auto;
+}
+
+.nft-card-infor {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 5px;
+}
+
+.info-card-price,
+.highest-bid {
+  align-items: flex-end;
+  background-color: transparent;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  height: 34px;
+  justify-content: center;
+  position: relative;
+}
+
+@media (min-width: 375px) and (max-width: 834px) {
+  .nfts-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+//   .nft-card {
+   
+//   }
+}
+
+@media (min-width: 834px) and (max-width: 1280px) {
+  .nfts-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+//   .nft-card {
+
+//   }
+}
+
+@media (min-width: 1280px) {
+  .nfts-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .nft-card {
+    width: 33%;
+  }
+}

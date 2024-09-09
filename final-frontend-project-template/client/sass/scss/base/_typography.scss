@@ -1,0 +1,189 @@
+
+* {
+    @include whiteColor;
+    @include work-sans;
+}
+
+.section-headline h5 {
+    @include work-sans;
+    font-size: 28px;
+}
+
+.section-headline p {
+    @include work-sans;
+    font-size: 16px;
+}
+
+ h4 {
+    @include work-sans;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+ p {
+    @include work-sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.info h5 {
+    @include work-sans;
+    font-size: 22px;
+}
+
+.info p {
+    @include space-mono;
+    font-size: 16px;
+}
+
+
+h5 {
+    @include work-sans;
+    font-size: 22px;
+}
+
+// signup 
+
+
+
+
+// NFT CARD
+
+.nft-card-bottom-heading h6 {
+    font-weight: 600;
+    font-family: $space-mono;
+    line-height: 30.8px;
+    margin-top: -1.00px;
+    text-align: left;
+    white-space: nowrap;
+    font-size: $font-size-L;
+}
+
+.nft-card-bottom-heading p {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: transparent;
+    display: flex;
+    gap: 12px;
+    height: auto;
+    position: relative;
+}
+
+.info-card-price p, 
+ .highest-bid p {
+    align-self: stretch;
+    background-color: transparent;
+    flex: 1;
+    letter-spacing: 0.00px;
+    line-height: 13.2px;
+    margin-top: -1.00px;
+    mix-blend-mode: normal;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    color: $color-font;
+    font-family: $space-mono;
+    font-size: $font-size-S;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.info-card-price span, 
+.highest-bid span {
+    align-self: stretch;
+    background-color: transparent;
+    flex: 1;
+    letter-spacing: 0.00px;
+    line-height: 13.2px;
+    mix-blend-mode: normal;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    font-family: $space-mono;
+    font-size: $font-size-M;
+    font-style: normal;
+    font-weight: 400;
+}
+
+// NFT CARD
+
+@media (max-width: 375px) {
+    .tablet-hero-heading h4 {
+        @include work-sans;
+        font-size: 67px;
+    }
+    
+    .tablet-hero-heading p {
+        @include work-sans;
+        font-size: 22px;
+    }
+
+
+    h5 {
+        @include work-sans;
+        font-size: 22px;
+    }
+    
+
+}
+
+@media (min-width: 375px) and (max-width: 834px) {
+    .tablet-hero-heading h4 {
+        @include work-sans;
+        font-size: 67px;
+    }
+    
+    .tablet-hero-heading p {
+        @include work-sans;
+        font-size: 22px;
+    }
+    
+   
+}
+
+@media (min-width: 834px) and (max-width: 1280px) {
+    .tablet-hero-heading h4 {
+        @include work-sans;
+        font-size: 67px;
+    }
+    
+    .tablet-hero-heading p {
+        @include work-sans;
+        font-size: 22px;
+    }
+    
+   
+}
+
+@media (min-width: 1280px) {
+
+    .section-headline h5 {
+        @include work-sans;
+        font-size: 32px;
+    }
+    
+    .section-headline p {
+        @include work-sans;
+        font-size: 28px;
+    }
+
+    .tablet-hero-heading h4 {
+        @include work-sans;
+        font-size: 67px;
+    }
+    
+    .tablet-hero-heading p {
+        @include work-sans;
+        font-size: 22px;
+    }
+    
+    .info h5 {
+        @include work-sans;
+        font-size: 26px;
+    }
+    
+    .info p {
+        @include space-mono;
+        font-size: 24px;
+    }
+}

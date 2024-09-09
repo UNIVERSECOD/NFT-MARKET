@@ -1,0 +1,41 @@
+@mixin background-clr-all {
+  background-color: #2b2b2b;
+}
+
+@mixin background-clr-text {
+    color: #2b2b2b;
+  }
+
+@mixin background-purple-color {
+  background-color: #a259ff;
+}
+
+@mixin card-color {
+  color: #3b3b3b;
+}
+
+@mixin secondary-background {
+  background-color: #3B3B3B;
+}
+
+@mixin whiteColor {
+  color: white;
+}
+
+@mixin placeCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin background-card-color {
+  background-color: #3b3b3b;
+}
+
+@mixin work-sans {
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+}
+
+@mixin space-mono {
+  font-family: "Space Mono", monospace;
+}
